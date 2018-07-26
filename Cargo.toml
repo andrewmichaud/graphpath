@@ -1,0 +1,23 @@
+[package]
+name = "graphpath"
+version = "0.1.0"
+authors = ["Andrew Michaud <dev@mail.andrewmichaud.com>"]
+license = "BSD-3-Clause"
+keywords = []
+description = "searches for path on graph between two things"
+documentation = ""
+homepage = "https://github.com/andrewmichaud/graphpath"
+repository = "https://github.com/andrewmichaud/graphpath"
+
+[dependencies]
+clap = "^2.24.1"
+itertools = "^0.6.0"
+rand = "^0.5.4"
+
+[lib]
+name = "libgraphpath"
+path = "src/lib.rs"
+
+[[bin]]
+name = "graphpath"
+path = "src/main.rs"
